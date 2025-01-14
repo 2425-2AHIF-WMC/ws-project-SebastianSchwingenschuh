@@ -12,6 +12,15 @@ h1, h2{
 }
 
 .container{
+    padding-bottom: 20px;
+    padding-top: 10px;
+    border-radius: 10px;
+    background-color:  rgba(100, 154, 206, 0.9);
+    box-shadow: 2px 2px 5px rgba(0,0,0, 0.3);
+
+}
+
+.section-container{
     background-color: white;
     padding: 20px;
     border-radius: 10px;
@@ -19,7 +28,8 @@ h1, h2{
 }
 
 footer{
-    position: absolute;
+    box-align: bottom;
+    position: relative;
     bottom: 0;
     width: 100%;
     text-align: center;
@@ -32,4 +42,19 @@ p.carousel{
     border-radius: 10px;
     width: auto;
     color: black;
+}
+
+.carousel-inner {
+    height: 50rem; /* Festlegen der Höhe des Carousels */
+}
+
+.carousel-item img {
+    width: 100%; /* Bilder sollen die Breite ausfüllen */
+    height: 100%; /* Bilder sollen die festgelegte Höhe ausfüllen */
+    object-fit: cover; /* Bilder zuschneiden, um den Raum auszufüllen */
+}
+
+.list-group-item{
+    background-color: rgba(150, 250, 255, 0.5);
+    border-color: rgba(100, 154, 206, 0.5);
 }
