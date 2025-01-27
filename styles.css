@@ -20,22 +20,27 @@ h1, h2{
 
 }
 
-.section-container{
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 2px 2px 5px rgba(0,0,0, 0.3);
+.container *{
+    padding: 1rem;
+    color: white;
 }
 
+
+
 footer{
-    box-align: bottom;
     position: relative;
     bottom: 0;
     width: 100%;
     text-align: center;
     padding: 1rem;
+    margin-top: 2rem;
     background-color: rgba(255, 255, 255, 0.5);
 }
+
+.carousel-item {
+    transition: transform 1s ease-in-out;
+}
+
 
 p.carousel{
     background-color: rgba(255, 255, 255, 0.5);
@@ -44,8 +49,18 @@ p.carousel{
     color: black;
 }
 
+.my-weatherCarousel{
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    margin: 0.5rem;
+}
+
 .carousel-inner {
     height: 50rem; /* Festlegen der Höhe des Carousels */
+}
+
+.carousel-inner2 {
+    height: 45rem;
 }
 
 .carousel-item img {
@@ -55,6 +70,88 @@ p.carousel{
 }
 
 .list-group-item{
-    background-color: rgba(150, 250, 255, 0.5);
+    background-color:  rgba(100, 154, 206, 0.0);
     border-color: rgba(100, 154, 206, 0.5);
+}
+
+.title{
+    text-align: center;
+}
+
+.mt-5{
+    color: white;
+}
+
+.mt-5 *{
+    color: white;
+}
+
+.highlight-button {
+    background-color: white;
+    border-radius: 8px;
+    width: 100%;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+    color: black;
+    font-size: 16px;
+}
+
+.highlight-button a{
+    padding: 1rem;
+}
+
+.highlight-button:hover {
+    background-color: #f8f9fa;
+    box-shadow: 2px 2px 5px rgba(0,0,0, 0.3);
+    transform: scale(1.0025); /* Vergrößert den Button */
+}
+
+.highlight-button a {
+    color: black;
+    text-decoration: none;
+}
+
+.highlight-button:hover a {
+    color: black;
+    text-decoration: none;
+}
+
+.btn{
+    color: black;
+}
+.btn:hover{
+    color: black;
+}
+
+.btn:active{
+    background-color:  rgba(100, 154, 206, 1.0);
+}
+.button-margin *{
+    margin-top: 0.25rem;
+}
+.button-margin button{
+    width: 50%;
+}
+.button-margin{
+    background-color:  rgba(100, 154, 206, 0.0);
+    box-shadow: 2px 2px 5px rgba(0,0,0, 0.0);
+}
+
+.custom-control {
+    z-index: 100; /* Sicherstellen, dass die Pfeile über anderen Elementen bleiben */
+    width: 5%; /* Kleinere Breite für die Pfeile */
+}
+
+.carousel-control-prev {
+    left: -5%; /* Pfeil weiter nach links */
+}
+
+.carousel-control-next {
+    right: -5%; /* Pfeil weiter nach rechts */
+}
+
+.carousel-item a {
+    display: block;
+}
+.center-img{
+    text-align: center;
 }
